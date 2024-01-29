@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        nav {
+            background-color: #1f1c1c;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            height: 50px;
+        }
+        
+        .large-nav-bar {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .large-nav-bar img {
+            width: 50px;
+        }
+        
+        .large-nav-bar>.nav-links {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            margin-right: 25px;
+            color: #fff;
+        }
+        
+        .nav-links a:hover {
+            scale: 1.1;
+            color: #487ff7;
+        }
+        
+        .large-nav-bar button {
+            margin: 8px 0px;
+            padding: 0px 40px;
+            border-radius: 5px;
+            background-color: #105afc;
+            color: #fff;
+            border: 0;
+            font-weight: bold;
+        }
+        
+        .large-nav-bar button:hover {
+            scale: 1.1;
+            cursor: pointer;
+        }
+        /* small navbar section */
+        
+        .small-nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            display: none;
+        }
+        
+        .small-nav-bar img {
+            width: 30px;
+        }
+        
+        .small-nav-bar i {
+            color: #fff;
+            font-size: 25px;
+        }
+        /* hero-section*/
+        
+        .hero-section {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .hero-section video {
+            width: 600px;
+            height: 600px;
+        }
+        
+        .text-section {
+            padding: 0px 0 0 20px;
+        }
+        
+        .text-section img {
+            width: 60%;
+            margin: 20px 0px;
+        }
+        
+        .text-section h3 {
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+        
+        .text-section h1 {
+            font-size: 60px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            color: #51a8f0;
+        }
+        
+        .text-section h4 {
+            font-size: 20px;
+            color: #1b90f0;
+            margin-top: 30px;
+        }
+        /* footer */
+        
+        footer {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            padding: 100px 0px 60px 0px;
+            background-color: #131212;
+            text-transform: capitalize;
+        }
+        
+        footer h1 {
+            font-size: 60px;
+            color: #3e3ec9;
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+        
+        footer h2 {
+            color: #fff;
+            font-size: 40px;
+        }
+        
+        @media screen and (max-width: 750px) {
+            .large-nav-bar {
+                display: none;
+            }
+            .small-nav-bar {
+                display: flex;
+                width: 100%;
+                padding: 0px 20px;
+            }
+            .hero-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .text-section {
+                width: 95%;
+            }
+            .hero-section video {
+                width: 90%;
+                border: 0;
+                outline: 0;
+            }
+            footer {
+                background-color: #fff;
+                padding: 0;
+            }
+            footer h1 {
+                font-size: 40px;
+            }
+            footer h2 {
+                font-size: 20px;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="large-nav-bar">
+            <img src="../media/imagesSet/rwd_logo.png" alt="logo">
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <button>Login</button>
+        </div>
+        <div class="small-nav-bar">
+            <img src="../media/imagesSet/rwd_logo.png" alt="logo">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <!-- hero-section -->
+    <main class="hero-section">
+        <div class="text-section">
+            <h3>Say Hi To</h3>
+            <h1>One Card</h1>
+            <h4>Co-branded Card Issuers :</h4>
+            <img src="../media/imagesSet/banksNameImg.png" alt="sponser-1">
+            <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+        </div>
+        <video src="../media/vedio/say_hi_2x_d3_.mp4" loop autoplay controls>
+        </video>
+    </main>
+    <footer>
+        <h1>no hidden fees ever</h1>
+        <h2>no joining fees.</h2>
+        <h2>no annual fees.</h2>
+        <h2>no rewards redemption fees.</h2>
+    </footer>
+</body>
+
+</html>
